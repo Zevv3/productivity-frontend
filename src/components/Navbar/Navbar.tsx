@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import MenuIcon from "@mui/icons-material/Menu";
-import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
+import EventIcon from '@mui/icons-material/Event';
 import { styled } from '@mui/system';
 import { Button, Toolbar, Typography, Menu, AppBar, Container, Box, IconButton, MenuItem, Stack } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom'
@@ -120,7 +120,7 @@ export const NavBar = () => {
         <AppBar position='fixed'>
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
-                    <LibraryMusicIcon fontSize='large' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                    <EventIcon fontSize='large' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
                     <Typography 
                         variant='h6'
                         noWrap
@@ -134,6 +134,7 @@ export const NavBar = () => {
                             textDecoration: 'none'
                         }}
                     >
+                        {/* TODO when authentication is set up and everything, it would be cool to put the user's name here ie "Zelly's Daily Planner" */}
                         Daily Planner
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'moon' }}}>
@@ -171,7 +172,7 @@ export const NavBar = () => {
                     </Menu>
                     </Box>
 
-                    <LibraryMusicIcon fontSize='large' sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+                    <EventIcon fontSize='large' sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                     <Typography
                         variant='h4'
                         noWrap
