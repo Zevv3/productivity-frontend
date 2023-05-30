@@ -1,3 +1,9 @@
+// TODO: Next step is to create components for the form to create an event. This will involve creating a model in flask as well to save
+// events to the database. I'll also have to set up user authorization through firebase to save events to a user. 
+// After that, I'll add the functionality of clicking on a day to bring up the form and all that
+// Then, I will work on creating a daily view and setting the current view to monthly view, maybe I'll make a weekly view as well
+// I should also add the ability to view more than just the current month via arrow buttons to view other months
+
 import React from 'react';
 import { styled } from '@mui/system';
 import { Button } from '@mui/material';
